@@ -36,7 +36,6 @@
     background-color: black;
     color: cyan;
     display: flex;
-    margin-top: 60px;
   }
   #game {
     width: 50vw;
