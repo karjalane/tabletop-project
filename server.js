@@ -7,6 +7,14 @@ io.on('connection', (socket) => {
 
   socket.on('send', (text) => {
     let newText = "<" + socket.id + "> " + text
+    if (text === 'struct card') {
+      io.emit('struct create', 130, 180)
+    }
+
+    if (text === 'struct token') {
+      io.emit('struct create', 100, 100)
+    }
+
     io.emit('receive', newText)
   })
 

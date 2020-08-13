@@ -1,7 +1,7 @@
 <template>
   <div id="container">
     <div id="output">
-      <h1>TITLE</h1>
+      <h1>CHAT</h1>
       <p v-for="(text, index) in textOutput" :key="index">{{ text }}</p>
     </div>
     <div id="input">
@@ -60,7 +60,7 @@
   }
   #input {
     position: fixed;
-    margin-top: 90vh;
+    margin-top: 80vh;
   }
   input[type=text] {
     height: 20px;
